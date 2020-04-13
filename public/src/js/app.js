@@ -4,6 +4,8 @@ if (navigator.serviceWorker) {
         .register('/sw.js')
         .then(() => {
             console.log("Service worker registed")
+        }).catch((err) => {
+            console.log('Service work register failed'), err;
         });
 }
 
